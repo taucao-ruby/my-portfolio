@@ -1,7 +1,7 @@
 # 👋 Cao Ngoc Tau (Tàu) — Backend-Oriented Software Engineer
 
 📍 Hue City, Vietnam  
-🌐 Portfolio: https://taucao-ruby.github.io/my-portfolio/  
+🌐 Portfolio: <https://taucao-ruby.github.io/my-portfolio/>  
 
 ---
 
@@ -61,11 +61,13 @@ I prefer making **careful, well-reasoned technical decisions** that support long
 ## 🚀 Career Goals
 
 **Short-term**  
+
 - Continue growing as a backend software engineer  
 - Deepen expertise in backend architecture and system design  
 - Work in a stable, challenging engineering environment  
 
 **Long-term**  
+
 - Evolve into a **senior engineer or product-oriented technical leader**  
 - Contribute to the design and evolution of complex, high-impact systems  
 
@@ -77,7 +79,7 @@ I take ownership of my growth through **structured planning, disciplined executi
 
 If you’re interested in my work or would like to discuss backend architecture, system design, or engineering challenges, feel free to reach out via my portfolio:
 
-👉 https://taucao-ruby.github.io/my-portfolio/
+👉 <https://taucao-ruby.github.io/my-portfolio/>
 
 ---
 
