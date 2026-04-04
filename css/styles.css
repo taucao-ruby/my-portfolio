@@ -503,48 +503,59 @@ img {
   background-color: var(--first-color);
 }
 
+/* Laravel / PHP */
 .skills__html {
   width: 95%;
 }
 
+/* PostgreSQL */
 .skills__css {
-  width: 95%;
-}
-
-.skills__js {
-  width: 60%;
-}
-
-.skills__react {
-  width: 85%;
-}
-
-.skills__php {
-  width: 80%;
-}
-
-.skills__node {
-  width: 60%;
-}
-
-.skills__firebase {
-  width: 80%;
-}
-
-.skills__laravel {
-  width: 60%;
-}
-
-.skills__figma {
   width: 90%;
 }
 
-.skills__sketch {
+/* Concurrency Design */
+.skills__js {
+  width: 90%;
+}
+
+/* Node.js / API */
+.skills__react {
+  width: 70%;
+}
+
+/* AI Agent Governance */
+.skills__php {
+  width: 92%;
+}
+
+/* TypeScript / React 19 */
+.skills__node {
   width: 85%;
 }
 
-.skills__photoshop {
+/* LLM Integration */
+.skills__firebase {
   width: 85%;
+}
+
+/* Docker / CI-CD */
+.skills__laravel {
+  width: 82%;
+}
+
+/* Test Engineering */
+.skills__figma {
+  width: 95%;
+}
+
+/* Security Engineering */
+.skills__sketch {
+  width: 88%;
+}
+
+/* System Architecture */
+.skills__photoshop {
+  width: 90%;
 }
 
 .skills__close .skills__list {
