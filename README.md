@@ -1,4 +1,4 @@
-# Cao Ngoc Tau (Tàu) — Expert Harness Engineer · AI-Governed Systems
+# Cao Ngoc Tau (Tàu) — Software Engineer · AI-Governed Systems
 
 📍 Hue City, Vietnam
 🌐 Portfolio: <https://taucao-ruby.github.io/my-portfolio/>
@@ -7,9 +7,9 @@
 
 ## About Me
 
-I am an **Expert Harness Engineer** pioneering the application of AI agent governance frameworks to control, audit, and enforce engineering quality across production-grade software systems.
+I'm a **software engineer** who applies AI-agent governance workflows to control, audit, and enforce engineering quality across the systems I build.
 
-Self-taught since 2016 (grade 10), I graduated from **Passerelles Numériques Vietnam** in Software Engineering, interned at **Unitech** (Da Nang Software Park) and **Softworld Vietnam**, and after years of rebuilding from the ground up, returned to engineering in 2025 to build the **Soleil Hostel** booking system — entirely under AI harness control — in under 4 months.
+Self-taught since 2016 (grade 10), I graduated from **Passerelles Numériques Vietnam** in Software Engineering, interned at **Unitech** (Da Nang Software Park) and **Softworld Vietnam**, and after years of rebuilding from the ground up, returned to engineering in 2025 and have been building the **Soleil Hostel** booking system — under an AI-governed workflow — ever since.
 
 ---
 
@@ -32,12 +32,19 @@ I designed and operationalized a full multi-agent governance framework applied e
 ### Backend Engineering
 
 - Laravel 12 + React 19 TypeScript monorepo
-- 1,120+ backend tests, PHPStan Level 5 / 0 errors / 0 baseline ignores
+- 1,789 backend tests (5,740 assertions) + 545 frontend tests; PHPStan Level 5 / 0 errors / 0 baseline ignores; Psalm clean (~90% inferred)
 - Deadlock-aware retry with SQLSTATE classification
-- Stripe two-phase cancellation with idempotency
-- PostgreSQL exclusion constraints as database-level safety net
-- State machine with explicit transition validation
-- 13 Architecture Decision Records (ADRs)
+- Dual payments: Stripe Cashier (payment-hold + durable refund-event idempotency, TOCTOU eliminated) **and** MoMo e-wallet (in-app QR, IPN sign/verify, `(order_id, trans_id)`-UNIQUE idempotency ledger)
+- PostgreSQL `no_overlapping_bookings` exclusion constraint as a database-level safety net
+- Booking state machine with explicit transition validation + immutable actor snapshots
+- 179/179 audit findings resolved across four audit rounds (v1–v4)
+
+### In-Product AI Assistant (AI Harness)
+
+- 7 `/v1/ai/*` endpoints with a 7-layer safety pipeline, kill switch, and canary routing
+- Durable AI proposal lifecycle with human confirmation (proposer-binding, drift detection)
+- Prompt-injection defense (AI-001), PII hard-block, and HMAC-signed audit trail
+- `php artisan ai:eval` regression gate run nightly in CI — blocks deploy on failure
 
 ### Quality Enforcement
 
@@ -45,6 +52,14 @@ I designed and operationalized a full multi-agent governance framework applied e
 - CI pipeline: 6 parallelized jobs, booking stress test, 95% coverage gate
 - Multi-stage Docker (4-stage frontend), Caddy with HSTS/CSP hardening
 - Tag-based production deploy with pre-deployment gate
+
+### Code Intelligence (Open Source)
+
+- Forked and extended **GitNexus** — an open-source knowledge-graph engine that indexes codebases for AI agents (rebranded *soleil-ai-review-engine* in my fork)
+- Contributed PHP call-graph resolution (`$this->prop->method()` edges), web server-mode agent init + OpenRouter model guard, Claude Code hook fixes, and CI/test infrastructure
+- Integrated it as the code-intelligence layer (MCP tools, impact analysis, knowledge-graph queries) for graph-aware, low-risk changes on Soleil Hostel
+
+> Built on the work of [GitNexus](https://github.com/abhigyanpatwari/GitNexus) and its contributors — my role here is fork, extension, and integration, not original authorship.
 
 ---
 
@@ -85,4 +100,4 @@ If you're interested in AI harness engineering, backend architecture, or the Sol
 
 ---
 
-> _"I pioneered AI-governed software development before it had a name."_
+> _"The harness enforces correctness — not hope."_
