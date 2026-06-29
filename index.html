@@ -215,65 +215,6 @@
         </div>
       </section>
 
-      <!--==================== IMPACT ====================-->
-      <section class="services section">
-        <h2 class="section__title">Impact & Engineering Decisions</h2>
-        <span class="section__subtitle">Outcomes from Soleil Hostel</span>
-
-        <div class="services__container container grid">
-          <div class="services__content">
-            <div>
-              <i class="uil uil-shield-check services__icon"></i>
-              <h3 class="services__title">
-                Zero Double-Booking, <br />
-                by Construction
-              </h3>
-            </div>
-            <p style="font-size: var(--small-font-size); line-height: 1.6;">
-              <strong>Revenue &amp; guest trust protected under concurrent load.</strong>
-              Made a PostgreSQL EXCLUDE overlap constraint the source of truth — not
-              app-level locks — so correctness survives bugs, retries, and horizontal
-              scaling. Reinforced with FOR UPDATE locking, optimistic version checks,
-              and TOCTOU-safe restore / refund / cancel paths, verified by stress tests.
-            </p>
-          </div>
-
-          <div class="services__content">
-            <div>
-              <i class="uil uil-credit-card services__icon"></i>
-              <h3 class="services__title">
-                Idempotent Dual Payments <br />
-                (Stripe + MoMo)
-              </h3>
-            </div>
-            <p style="font-size: var(--small-font-size); line-height: 1.6;">
-              <strong>No double-charges · safe to retry · survives restart &amp; scale-out.</strong>
-              Replaced an in-memory guard with durable UNIQUE ledgers
-              (stripe_refund_events, momo_webhook_events), closing the TOCTOU window and
-              cutting ~500 lines of fragile state. Added MoMo e-wallet with IPN
-              sign/verify to fit how Vietnamese guests actually pay.
-            </p>
-          </div>
-
-          <div class="services__content">
-            <div>
-              <i class="uil uil-robot services__icon"></i>
-              <h3 class="services__title">
-                AI-Governed Delivery, <br />
-                Human Accountability
-              </h3>
-            </div>
-            <p style="font-size: var(--small-font-size); line-height: 1.6;">
-              <strong>30+ AI-assisted sessions · zero regressions · 179/179 issues closed.</strong>
-              A governance harness — constitutional context, MCP safety constraints,
-              JSONL audit, an eval gate (ai:eval), a kill switch, and human-in-the-loop
-              proposals — so AI accelerates delivery while a human owns every decision.
-              Documented in 13+ ADRs.
-            </p>
-          </div>
-        </div>
-      </section>
-
       <!--==================== SKILLS ====================-->
       <section class="skills section" id="skills">
         <h2 class="section__title">Skills</h2>
